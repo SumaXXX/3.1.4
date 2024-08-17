@@ -1,0 +1,364 @@
+
+
+
+
+/* project css */
+
+
+html {
+    box-sizing: border-box;
+    font-family: "TT Lakes";
+    font-size: 14px;
+    color: #1b1c21;
+  }
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Regular.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Lakes Demi";
+  src: url("fonts/TTLakes-DemiBold.woff") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("fonts/TTLakes-ExtraBold.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.upper-menu {
+  margin: 0;
+  display: flex;
+  height: 88px;
+  align-items: center;
+  background-color: #fff;
+}
+
+.upper-menu__left-group {
+  display: flex;
+  align-items: center;
+}
+
+.upper-menu__right-group {
+  margin-left: auto;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  display: flex;
+}
+
+.upper-menu__burger {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url("icons/burger.svg");
+  background-size: cover;
+  border-radius: 50%;
+  margin: 24px 8px;
+  padding: 0;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  margin: 18px 8px;
+  padding: 0;
+}
+
+.divider {
+  width: 2px;
+  height: 32px;
+  align-self: center;
+  margin: 18px 8px;
+  padding: 0;
+}
+
+.repair {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url("icons/repair.svg");
+  background-size: cover;
+  border-radius: 50%;
+  margin: 24px 8px;
+  padding: 0;
+}
+
+.checkstatus {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url("icons/checkstatus.svg");
+  background-size: cover;
+  border-radius: 50%;
+  margin: 24px 8px;
+  padding: 0;
+}
+
+.call {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url("icons/call.svg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 24px 8px;
+    padding: 0;
+}
+
+.back {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url("icons/chat.svg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 24px 8px;
+    padding: 0;
+}
+
+.profile { 
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url("icons/profile.svg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 24px 8px;
+    padding: 0;
+}
+
+.about {
+  padding-top: 24px;
+  background-color: #f8f8f8;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title__h1 {
+  font-family: "TT Lakes Bold";
+  font-size: 28px;
+  margin: 0;
+  margin-left: 12px;
+}
+
+.menu {
+  display: flex;
+  height: 40px;
+}
+
+.scroll-menu {
+  margin: 0;
+  height: 40px;
+  margin-left: 16px;
+  list-style: none;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  padding: 10px 0;
+  display: inline-flex;
+}
+
+.scroll-menu__li {
+  width: 246px;
+  height: 40px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #7e7e82;
+  padding: 6px 16px;
+  font-size: 16px;
+}
+
+.scroll-menu__li--current {
+  border: solid 2px;
+  border-radius: 5px 5px;
+  border-color: #b8ffec;
+  background-color: #ffffff;
+}
+
+.main-info__description {
+  margin-right: 20px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.main-info__read-more {
+  display: flex;
+  text-decoration: none;
+  color: #1b1c21;
+  margin-left: 16px;
+  height: 24px;
+  width: 132px;
+  padding: 4px;
+  align-items: center;
+  gap: 16px;
+}
+
+.main-info__arrows {
+  height: 9px;
+  width: 6px;
+}
+
+.main-info__text {
+  font-family: "TT Lakes Demi";
+}
+
+.main-info__office-photo {
+  margin-top: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.menu__gradient {
+  position: absolute;
+  right: 0;
+  margin-left: auto;
+  width: 24px;
+  height: inherit;
+  z-index: 999;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.main-info {
+    display: block;
+    padding-bottom: 40px;
+}
+
+.interactive--pointer:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 767.99px) {
+    .call {
+        display: none;
+    }
+    .back {
+        display: none;
+    }
+    .profile {
+        display: none;
+    }
+    .upper-menu__right-group .divider {
+        display: none;
+    }
+}
+
+@media (max-width: 1129.99px) {
+    .hidden-buttons {
+    display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-info__next {max-width: 312px; padding-left: 16px;}
+    .main-info__next::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
+  }
+
+  .main-info__office-photo {
+    max-width: 50%;
+  }
+
+  .main-info {
+    display: flex;
+  }
+
+  .main-info__read-more {
+    position: fixed;
+    margin-top: 160px;
+  }
+
+  .logo {
+    order:1;
+  }
+}
+
+@media (min-width: 1120px) {
+
+  .main-info__next::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
+    
+  }
+  .main-info__next {max-width: 490px; padding-left: 16px;}
+  .upper-menu {display: none;}
+  .title {
+    margin-top: 0px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .hidden-buttons {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  .hidden {
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1B1C21;
+  }
+
+  .menu__gradient {
+    display:none;
+  }
+
+  .scroll-menu {
+    height: 100px;
+    margin: 0;
+    margin-left: 16px;
+    list-style: none;
+    display: flex;
+    overflow-x: unset;
+    white-space: nowrap;
+    width: 100%;
+    padding: 10px ;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .scroll-menu__li {
+  
+    width: 246px;
+    height: 40px;
+    text-decoration: none;
+    color: #7e7e82;
+    padding: 6px 16px;
+    font-size: 16px;
+  }
+
+  .description {
+    margin-top: 20px;
+  }
+
+  .main-info {
+    margin-top: 10px;
+  }
+}
