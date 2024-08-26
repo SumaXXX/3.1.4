@@ -1,20 +1,20 @@
-
-
-
-
 /* project css */
 
-
 html {
-    box-sizing: border-box;
-    font-family: "TT Lakes";
-    font-size: 14px;
-    color: #1b1c21;
-  }
+  box-sizing: border-box;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  color: #1b1c21;
+}
+
+li {
+  list-style:none;
+}
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("fonts/TTLakes-Regular.woff") format("woff2");
+  src: url("fonts/TTLakes-Regular.woff")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,8 @@ html {
 
 @font-face {
   font-family: "TT Lakes Demi";
-  src: url("fonts/TTLakes-DemiBold.woff") format("woff2");
+  src: url("fonts/TTLakes-DemiBold.woff")
+    format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -30,7 +31,8 @@ html {
 
 @font-face {
   font-family: "TT Lakes Bold";
-  src: url("fonts/TTLakes-ExtraBold.woff") format("woff2");
+  src: url("fonts/TTLakes-ExtraBold.woff")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -110,36 +112,36 @@ html {
 }
 
 .call {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-image: url("icons/call.svg");
-    background-size: cover;
-    border-radius: 50%;
-    margin: 24px 8px;
-    padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url("icons/call.svg");
+  background-size: cover;
+  border-radius: 50%;
+  margin: 24px 8px;
+  padding: 0;
 }
 
 .back {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-image: url("icons/chat.svg");
-    background-size: cover;
-    border-radius: 50%;
-    margin: 24px 8px;
-    padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url("icons/chat.svg");
+  background-size: cover;
+  border-radius: 50%;
+  margin: 24px 8px;
+  padding: 0;
 }
 
-.profile { 
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-image: url("icons/profile.svg");
-    background-size: cover;
-    border-radius: 50%;
-    margin: 24px 8px;
-    padding: 0;
+.profile {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url("icons/profile.svg");
+  background-size: cover;
+  border-radius: 50%;
+  margin: 24px 8px;
+  padding: 0;
 }
 
 .about {
@@ -245,38 +247,48 @@ html {
 }
 
 .main-info {
-    display: block;
-    padding-bottom: 40px;
+  display: block;
+  padding-bottom: 40px;
 }
 
 .interactive--pointer:hover {
   cursor: pointer;
+  opacity: 0.5;
+}
+
+.interactive--pointer button,
+label:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 767.99px) {
-    .call {
-        display: none;
-    }
-    .back {
-        display: none;
-    }
-    .profile {
-        display: none;
-    }
-    .upper-menu__right-group .divider {
-        display: none;
-    }
+  .call {
+    display: none;
+  }
+  .back {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+  .upper-menu__right-group
+    .divider {
+    display: none;
+  }
 }
 
 @media (max-width: 1129.99px) {
-    .hidden-buttons {
+  .hidden-buttons {
     display: none;
-    }
+  }
 }
 
 @media (min-width: 768px) {
-    .main-info__next {max-width: 312px; padding-left: 16px;}
-    .main-info__next::after {
+  .main-info__next {
+    max-width: 312px;
+    padding-left: 16px;
+  }
+  .main-info__next::after {
     content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
   }
 
@@ -294,24 +306,26 @@ html {
   }
 
   .logo {
-    order:1;
+    order: 1;
   }
 }
 
 @media (min-width: 1120px) {
-
   .main-info__next::after {
     content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
-    
   }
-  .main-info__next {max-width: 490px; padding-left: 16px;}
-  .upper-menu {display: none;}
+  .main-info__next {
+    max-width: 490px;
+    padding-left: 16px;
+  }
+  .upper-menu {
+    display: none;
+  }
   .title {
     margin-top: 0px;
     margin-bottom: 24px;
     display: flex;
     align-items: center;
-    
   }
   .hidden-buttons {
     display: flex;
@@ -324,11 +338,11 @@ html {
     align-items: center;
     text-decoration: none;
     font-weight: bold;
-    color: #1B1C21;
+    color: #1b1c21;
   }
 
   .menu__gradient {
-    display:none;
+    display: none;
   }
 
   .scroll-menu {
@@ -340,12 +354,11 @@ html {
     overflow-x: unset;
     white-space: nowrap;
     width: 100%;
-    padding: 10px ;
+    padding: 10px;
     display: inline-flex;
     flex-wrap: wrap;
   }
   .scroll-menu__li {
-  
     width: 246px;
     height: 40px;
     text-decoration: none;
