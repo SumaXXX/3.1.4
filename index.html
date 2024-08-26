@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body class="services">
+    <nav class="upper-menu">
+      <ul class="upper-menu__left-group">
+        <li>
+          <button class="upper-menu__burger interactive--pointer"></button>
+        </li>
+        <li>
+          <img
+            src="icons\group.svg"
+            alt="лого"
+            class="logo"
+          />
+        </li>
+        <li>
+          <img
+            src="icons\divider.svg"
+            alt=""
+            class="divider"
+          />
+        </li>
+      </ul>
+      <ul class="upper-menu__right-group">
+        <li>
+          <button class="call interactive--pointer"></button>
+        </li>
+        <li>
+          <button class="back interactive--pointer"></button>
+        </li>
+        <li>
+          <button class="profile interactive--pointer"></button>
+        </li>
+        <li>
+          <img
+            src="icons\divider.svg"
+            alt=""
+            class="divider"
+          />
+        </li>
+        <li>
+          <button class="repair interactive--pointer"></button>
+        </li>
+        <li>
+          <button class="checkstatus interactive--pointer"></button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="about">
+      <div class="title">
+        <img
+          src="icons\highlight.svg"
+          alt=""
+          class="title__decor-line"
+        />
+        <h1 class="title__h1">Услуги и сервисы</h1>
+        <ul class="hidden-buttons">
+          <li>
+            <a
+              href="#"
+              class="hidden interactive--pointer"
+            >
+              <label
+                class=""
+                for="repair"
+                >Оставить заявку</label
+              >
+              <button
+                class="repair"
+                id="repair"
+              ></button>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hidden interactive--pointer"
+            >
+              <label
+                class=" "
+                for="checkstatus"
+                >Статус ремонта</label
+              >
+              <button
+                class="checkstatus"
+                id="checkstatus"
+              ></button>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="menu">
+        <ul class="scroll-menu">
+          <li>
+            <a
+              href="#"
+              class="scroll-menu__li scroll-menu__li--current interactive--pointer"
+              >Ремонтируемые устройства</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="scroll-menu__li interactive--pointer"
+              >Дополнительные услуги</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="scroll-menu__li interactive--pointer"
+              >Цены на услуги</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="scroll-menu__li interactive--pointer"
+              >Специальные цены</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="scroll-menu__li interactive--pointer"
+              >Адреса сервисных центров</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="scroll-menu__li interactive--pointer"
+              >Отзывы</a
+            >
+          </li>
+        </ul>
+        <div class="menu__gradient"></div>
+      </nav>
+
+      <article class="main-info">
+        <div class="description">
+          <p class="main-info__description">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы sможете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <p class="main-info__next"></p>
+        </div>
+
+        <a
+          href="#"
+          class="main-info__read-more interactive--pointer"
+        >
+          <img
+            src="icons\arrows.svg"
+            alt="читайте далее"
+            class="main-info__arrows"
+          />
+          <p class="main-info__text">Читайте далее</p>
+        </a>
+        <img
+          src="images\CPS logo wall.png"
+          alt="Вывеска компании CPC"
+          class="main-info__office-photo"
+        />
+      </article>
+    </main>
+  </body>
+</html>
