@@ -7,42 +7,42 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <title>Services</title>
+    <link rel="stylesheet" href="normilize.css  " />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="services">
     <header class="upper-menu">
-      <div class="upper-menu__left-group">
-        <button class="upper-menu__burger"></button>
-        <img src="icons\group.svg" alt="лого" class="upper-menu__logo" />
-        <img src="icons\divider.svg" alt="" class="upper-menu__divider" />
-      </div>
-      <div class="upper-menu__right-group">
-        <button class="upper-menu__call"></button>
-        <button class="upper-menu__back"></button>
-        <button class="upper-menu__profile"></button>
-        <img src="icons\divider.svg" alt="" class="upper-menu__divider" />
-        <button class="upper-menu__repair"></button>
-        <button class="upper-menu__checkstatus"></button>
-      </div>
+      <ul class="upper-menu__left-group">
+        <li><button class="upper-menu__burger interactive--pointer"></button></li>
+          <li><img src="icons\group.svg" alt="лого" class="logo" /></li>
+            <li><img src="icons\divider.svg" alt="" class="divider"/></li>
+      </ul>
+      <ul class="upper-menu__right-group">
+        <li><button class="call interactive--pointer"></button></li>
+        <li><button class="back interactive--pointer"></button></li>
+        <li><button class="profile interactive--pointer"></button></li>
+        <li><img src="icons\divider.svg" alt="" class="divider" /></li>
+        <li><button class="repair interactive--pointer"></button></li>
+        <li><button class="checkstatus interactive--pointer"></button></li>
+      <ul>
     </header>
     <main class="about">
       <div class="title">
         <img src="icons\highlight.svg" alt="" class="title__decor-line"/>
         <h1 class="title__h1">Услуги и сервисы</h1>
-        <div class="hidden-buttons">
-            <a href="#" class="hidden">
-                <label for="upper-menu__repair">Оставить заявку</label>
-                <button class="upper-menu__repair" id="upper-menu__repair"></button>
-            </a>
-            <a href="#" class="hidden">
-                <label for="upper-menu__checkstatus">Статус ремонта</label>
-                <button class="upper-menu__checkstatus" id="upper-menu__checkstatus"></button>
-                
-            </a>
-        </div>
+        <ul class="hidden-buttons">
+            <li><a href="#" class="hidden ">
+                <label class="interactive--pointer" for="repair">Оставить заявку</label>
+                <button class="repair interactive--pointer" id="repair"></button>
+            </a></li>
+            <li><a href="#" class="hidden interactive--pointer">
+                <label class="interactive--pointer" for="checkstatus">Статус ремонта</label>
+                <button class="checkstatus " id="checkstatus"></button>
+            </a></li>
+          </ul>
         
       </div>
-      <div class="menu">
+      <nav class="menu">
         <ul class="scroll-menu">
             <li ><a href="#" class="scroll-menu__li scroll-menu__li--current">Ремонтируемые устройства</a></li>
             <li ><a href="#" class="scroll-menu__li">Дополнительные услуги</a></li>
@@ -52,7 +52,7 @@
             <li ><a href="#" class="scroll-menu__li">Отзывы</a></li>
           </ul>
           <div class="menu__gradient"></div>
-      </div>
+        </nav>
  
       <article class="main-info">
         <div class="description">
